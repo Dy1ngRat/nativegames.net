@@ -61,6 +61,73 @@ window.__h82AlnkH6D91__("WyJwdWItMTU2NTc2MDg5ODY0Njk5OSIsW251bGwsbnVsbCxudWxsLCJ
     <link rel="stylesheet" href="assets/css/Off-Canvas-Sidebar-Drawer-Navbar.css">
     <link rel="stylesheet" href="assets/css/sidebar-style4.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
+
+    <style>
+        /* Fix the navbar height and padding */
+        #mainNav.navbar {
+            min-height: 56px;
+            height: auto !important;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            /* Remove any accidental full-screen height */
+            max-height: 80px;
+            overflow: visible;
+        }
+        
+        /* Make sure .container inside the nav doesn't stretch vertically */
+        #mainNav .container {
+            align-items: center !important;
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            height: auto !important;
+            min-height: 0 !important;
+            max-height: 60px !important;
+        }
+        
+        /* Fix logo and brand alignment */
+        #mainNav .navbar-brand,
+        #mainNav img {
+            height: 40px !important;
+            max-height: 40px !important;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        /* Fix the navbar-collapse height and alignment */
+        #mainNav .navbar-collapse {
+            align-items: center !important;
+            height: auto !important;
+            min-height: 0 !important;
+            max-height: 100px !important;
+            background: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        
+        /* Ensure nav-links don't have extra padding or height */
+        #mainNav .nav-link {
+            padding-top: 0.3rem !important;
+            padding-bottom: 0.3rem !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            font-size: 1rem !important;
+            line-height: 1.2 !important;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #mainNav.navbar {
+                max-height: 120px;
+            }
+            #mainNav .container,
+            #mainNav .navbar-collapse {
+                max-height: 120px !important;
+            }
+        }
+    </style>
 </head>
 
 <body class="text-center" style="background: #212f3c;">
